@@ -5,23 +5,23 @@
 #include <util/delay.h>
 
 
-#define LED_DDR	   DDRA // ÀÌ·¸°Ô ÇÏ´Â ÀÌÀ¯´Â  LED_DDR¿¡¼­ ¹Ù²ãÁÖ¸é COMPILER°¡ ¾Ë¾Æ¼­ º¯°æ
+#define LED_DDR	   DDRA // ï¿½Ì·ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  LED_DDRï¿½ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½ï¿½Ö¸ï¿½ COMPILERï¿½ï¿½ ï¿½Ë¾Æ¼ï¿½ ï¿½ï¿½ï¿½ï¿½
 #define LED_PORT   PORTA
 
 #define BUTTON_DDR DDRD
-#define BUTTON_PIN PIND // portD¸¦ read¸¦ ÇÏ´Â resister , PINx´Â ÇÏ³ªÀÇ ¸Þ¸ð¸® AVR¿¡¼­ Á¦°øÇÏ´Â resistor, Àü¾Ð 5V¸¦ ÀÐÀ¸¸é 1, 0V¸¦ ÀÐÀ¸¸é 0
+#define BUTTON_PIN PIND // portDï¿½ï¿½ readï¿½ï¿½ ï¿½Ï´ï¿½ resister , PINxï¿½ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½Þ¸ï¿½ AVRï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ resistor, ï¿½ï¿½ï¿½ï¿½ 5Vï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1, 0Vï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0
 #define BUTTON1 4 // PORTD.4
 #define BUTTON2 5 // PORTD.5
 #define BUTTON3 6 // PORTD.6
 #define BUTTON4 7 // PORTD.7
-
+//test//
 
 int main(void)
 
 {
 
-	LED_DDR = 0xff; // DDRA = 0xff; LEDÃâ·Â ¸ðµå ÀÌ±â ¶§¹®¿¡ 1·Î ¼³Á¤
-	BUTTON_DDR &= ~((1 << BUTTON1) | (1 << BUTTON2) | (1 << BUTTON3) | (1 << BUTTON4)); // input ¸ðµå : 0À¸·Î ¼³Á¤
+	LED_DDR = 0xff; // DDRA = 0xff; LEDï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ì±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	BUTTON_DDR &= ~((1 << BUTTON1) | (1 << BUTTON2) | (1 << BUTTON3) | (1 << BUTTON4)); // input ï¿½ï¿½ï¿½ : 0ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 	while (1)
 
