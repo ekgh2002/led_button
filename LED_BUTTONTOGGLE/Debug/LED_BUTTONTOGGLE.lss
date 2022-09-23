@@ -1,0 +1,765 @@
+
+LED_BUTTONTOGGLE.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  0000044a  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000003d6  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000009  00800100  00800100  0000044a  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000044a  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  0000047c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000088  00000000  00000000  000004bc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000e66  00000000  00000000  00000544  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000095b  00000000  00000000  000013aa  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000070f  00000000  00000000  00001d05  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000000d8  00000000  00000000  00002414  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000522  00000000  00000000  000024ec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000004d4  00000000  00000000  00002a0e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000068  00000000  00000000  00002ee2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	53 c0       	rjmp	.+166    	; 0xac <__bad_interrupt>
+   6:	00 00       	nop
+   8:	51 c0       	rjmp	.+162    	; 0xac <__bad_interrupt>
+   a:	00 00       	nop
+   c:	4f c0       	rjmp	.+158    	; 0xac <__bad_interrupt>
+   e:	00 00       	nop
+  10:	4d c0       	rjmp	.+154    	; 0xac <__bad_interrupt>
+  12:	00 00       	nop
+  14:	4b c0       	rjmp	.+150    	; 0xac <__bad_interrupt>
+  16:	00 00       	nop
+  18:	49 c0       	rjmp	.+146    	; 0xac <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	47 c0       	rjmp	.+142    	; 0xac <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	45 c0       	rjmp	.+138    	; 0xac <__bad_interrupt>
+  22:	00 00       	nop
+  24:	43 c0       	rjmp	.+134    	; 0xac <__bad_interrupt>
+  26:	00 00       	nop
+  28:	41 c0       	rjmp	.+130    	; 0xac <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	3f c0       	rjmp	.+126    	; 0xac <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	3d c0       	rjmp	.+122    	; 0xac <__bad_interrupt>
+  32:	00 00       	nop
+  34:	3b c0       	rjmp	.+118    	; 0xac <__bad_interrupt>
+  36:	00 00       	nop
+  38:	39 c0       	rjmp	.+114    	; 0xac <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	37 c0       	rjmp	.+110    	; 0xac <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	35 c0       	rjmp	.+106    	; 0xac <__bad_interrupt>
+  42:	00 00       	nop
+  44:	33 c0       	rjmp	.+102    	; 0xac <__bad_interrupt>
+  46:	00 00       	nop
+  48:	31 c0       	rjmp	.+98     	; 0xac <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	2f c0       	rjmp	.+94     	; 0xac <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	2d c0       	rjmp	.+90     	; 0xac <__bad_interrupt>
+  52:	00 00       	nop
+  54:	2b c0       	rjmp	.+86     	; 0xac <__bad_interrupt>
+  56:	00 00       	nop
+  58:	29 c0       	rjmp	.+82     	; 0xac <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	27 c0       	rjmp	.+78     	; 0xac <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	25 c0       	rjmp	.+74     	; 0xac <__bad_interrupt>
+  62:	00 00       	nop
+  64:	23 c0       	rjmp	.+70     	; 0xac <__bad_interrupt>
+  66:	00 00       	nop
+  68:	21 c0       	rjmp	.+66     	; 0xac <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	1f c0       	rjmp	.+62     	; 0xac <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	1d c0       	rjmp	.+58     	; 0xac <__bad_interrupt>
+  72:	00 00       	nop
+  74:	1b c0       	rjmp	.+54     	; 0xac <__bad_interrupt>
+  76:	00 00       	nop
+  78:	19 c0       	rjmp	.+50     	; 0xac <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	17 c0       	rjmp	.+46     	; 0xac <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	15 c0       	rjmp	.+42     	; 0xac <__bad_interrupt>
+  82:	00 00       	nop
+  84:	13 c0       	rjmp	.+38     	; 0xac <__bad_interrupt>
+  86:	00 00       	nop
+  88:	11 c0       	rjmp	.+34     	; 0xac <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_clear_bss>:
+  98:	21 e0       	ldi	r18, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	01 c0       	rjmp	.+2      	; 0xa2 <.do_clear_bss_start>
+
+000000a0 <.do_clear_bss_loop>:
+  a0:	1d 92       	st	X+, r1
+
+000000a2 <.do_clear_bss_start>:
+  a2:	a9 30       	cpi	r26, 0x09	; 9
+  a4:	b2 07       	cpc	r27, r18
+  a6:	e1 f7       	brne	.-8      	; 0xa0 <.do_clear_bss_loop>
+  a8:	4d d1       	rcall	.+666    	; 0x344 <main>
+  aa:	93 c1       	rjmp	.+806    	; 0x3d2 <_exit>
+
+000000ac <__bad_interrupt>:
+  ac:	a9 cf       	rjmp	.-174    	; 0x0 <__vectors>
+
+000000ae <init_button>:
+ *  Author: kccistc
+ */ 
+ #include "BUTTON.h"
+ void init_button()
+ {
+	 BUTTON_DDR &= ~((1 << BUTTON1) | (1 << BUTTON2) | (1 << BUTTON3) | (1 << BUTTON4));  //  input : 0으로 설정
+  ae:	81 b3       	in	r24, 0x11	; 17
+  b0:	8f 70       	andi	r24, 0x0F	; 15
+  b2:	81 bb       	out	0x11, r24	; 17
+  b4:	08 95       	ret
+
+000000b6 <get_button1>:
+ int get_button1()
+ {
+	 static uint8_t prev_state=0;  //  button의 상태 0 : off 1 : on
+	 uint8_t current_state;  //  unsigned char = current state
+	 
+	 current_state = BUTTON_PIN & (1 << BUTTON1);  //  button1 값을 읽는다. 0x10
+  b6:	80 b3       	in	r24, 0x10	; 16
+  b8:	80 71       	andi	r24, 0x10	; 16
+	 if(prev_state == 0 && current_state !=0)  //  button이 처음 눌려진 상태
+  ba:	90 91 02 01 	lds	r25, 0x0102	; 0x800102 <prev_state.1732>
+  be:	91 11       	cpse	r25, r1
+  c0:	11 c0       	rjmp	.+34     	; 0xe4 <get_button1+0x2e>
+  c2:	88 23       	and	r24, r24
+  c4:	79 f0       	breq	.+30     	; 0xe4 <get_button1+0x2e>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  c6:	2f ef       	ldi	r18, 0xFF	; 255
+  c8:	8d ee       	ldi	r24, 0xED	; 237
+  ca:	92 e0       	ldi	r25, 0x02	; 2
+  cc:	21 50       	subi	r18, 0x01	; 1
+  ce:	80 40       	sbci	r24, 0x00	; 0
+  d0:	90 40       	sbci	r25, 0x00	; 0
+  d2:	e1 f7       	brne	.-8      	; 0xcc <get_button1+0x16>
+  d4:	00 c0       	rjmp	.+0      	; 0xd6 <get_button1+0x20>
+  d6:	00 00       	nop
+	 {
+		 _delay_ms(60);  //  noise가 지나가기를 기다리는 상태
+		 prev_state=1;  //  처음 눌려진 상태가 아니다.
+  d8:	81 e0       	ldi	r24, 0x01	; 1
+  da:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <prev_state.1732>
+		 return 0;      //  아직도 진짜로 눌러진 상태가 아니다.
+  de:	80 e0       	ldi	r24, 0x00	; 0
+  e0:	90 e0       	ldi	r25, 0x00	; 0
+  e2:	08 95       	ret
+	 }
+	 else if (prev_state == 1 && current_state == 0)  //  button이 눌렸다(prev_state == 1) 떼어진 상태 (current_state == 0)
+  e4:	91 30       	cpi	r25, 0x01	; 1
+  e6:	81 f4       	brne	.+32     	; 0x108 <get_button1+0x52>
+  e8:	81 11       	cpse	r24, r1
+  ea:	11 c0       	rjmp	.+34     	; 0x10e <get_button1+0x58>
+	 {
+		 prev_state=0;
+  ec:	10 92 02 01 	sts	0x0102, r1	; 0x800102 <prev_state.1732>
+  f0:	2f ef       	ldi	r18, 0xFF	; 255
+  f2:	86 e7       	ldi	r24, 0x76	; 118
+  f4:	91 e0       	ldi	r25, 0x01	; 1
+  f6:	21 50       	subi	r18, 0x01	; 1
+  f8:	80 40       	sbci	r24, 0x00	; 0
+  fa:	90 40       	sbci	r25, 0x00	; 0
+  fc:	e1 f7       	brne	.-8      	; 0xf6 <get_button1+0x40>
+  fe:	00 c0       	rjmp	.+0      	; 0x100 <get_button1+0x4a>
+ 100:	00 00       	nop
+		  _delay_ms(30);
+		 return 1;  //  완전히 눌렸다 떼어진 상태로 인정
+ 102:	81 e0       	ldi	r24, 0x01	; 1
+ 104:	90 e0       	ldi	r25, 0x00	; 0
+ 106:	08 95       	ret
+	 }
+	 return 0;  //  아직 완전히 s/w를 눌렀다 떼지 않은 상태
+ 108:	80 e0       	ldi	r24, 0x00	; 0
+ 10a:	90 e0       	ldi	r25, 0x00	; 0
+ 10c:	08 95       	ret
+ 10e:	80 e0       	ldi	r24, 0x00	; 0
+ 110:	90 e0       	ldi	r25, 0x00	; 0
+ }
+ 112:	08 95       	ret
+
+00000114 <get_button2>:
+ int get_button2()    // port4 (button1)에 연결된 것을 읽어들이는 함수
+{
+	 static uint8_t prev_state=0;   // 버튼의 상태 0: off, 1: on
+	 uint8_t current_state;    // uint8_t : open source type -> unsigned char = uint8_t
+	 
+	 current_state = BUTTON_PIN & (1 << BUTTON2);      // button1 값을 읽는다  0x10
+ 114:	80 b3       	in	r24, 0x10	; 16
+ 116:	80 72       	andi	r24, 0x20	; 32
+	 if (prev_state == 0 && current_state !=0)         // 버튼이 처음 눌려진 상태
+ 118:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <prev_state.1736>
+ 11c:	91 11       	cpse	r25, r1
+ 11e:	11 c0       	rjmp	.+34     	; 0x142 <get_button2+0x2e>
+ 120:	88 23       	and	r24, r24
+ 122:	79 f0       	breq	.+30     	; 0x142 <get_button2+0x2e>
+ 124:	2f ef       	ldi	r18, 0xFF	; 255
+ 126:	8d ee       	ldi	r24, 0xED	; 237
+ 128:	92 e0       	ldi	r25, 0x02	; 2
+ 12a:	21 50       	subi	r18, 0x01	; 1
+ 12c:	80 40       	sbci	r24, 0x00	; 0
+ 12e:	90 40       	sbci	r25, 0x00	; 0
+ 130:	e1 f7       	brne	.-8      	; 0x12a <get_button2+0x16>
+ 132:	00 c0       	rjmp	.+0      	; 0x134 <get_button2+0x20>
+ 134:	00 00       	nop
+	 {
+		 _delay_ms(60);          // Noise가 지나가기를 기다리는 시간
+		 prev_state=1;           // 처음 눌려진 상태가 아니다
+ 136:	81 e0       	ldi	r24, 0x01	; 1
+ 138:	80 93 01 01 	sts	0x0101, r24	; 0x800101 <prev_state.1736>
+		 return 0;              // 진짜로 눌려진 상태가 아니다
+ 13c:	80 e0       	ldi	r24, 0x00	; 0
+ 13e:	90 e0       	ldi	r25, 0x00	; 0
+ 140:	08 95       	ret
+	 }
+	 else if (prev_state == 1 && current_state ==0) // 버튼이 눌렸다가(prev==1) 떼어진 상태(current==0) -> high (5V)에서 low (0V)로 떨어지는 상태
+ 142:	91 30       	cpi	r25, 0x01	; 1
+ 144:	81 f4       	brne	.+32     	; 0x166 <get_button2+0x52>
+ 146:	81 11       	cpse	r24, r1
+ 148:	11 c0       	rjmp	.+34     	; 0x16c <get_button2+0x58>
+	 {
+		 prev_state=0;
+ 14a:	10 92 01 01 	sts	0x0101, r1	; 0x800101 <prev_state.1736>
+ 14e:	2f ef       	ldi	r18, 0xFF	; 255
+ 150:	86 e7       	ldi	r24, 0x76	; 118
+ 152:	91 e0       	ldi	r25, 0x01	; 1
+ 154:	21 50       	subi	r18, 0x01	; 1
+ 156:	80 40       	sbci	r24, 0x00	; 0
+ 158:	90 40       	sbci	r25, 0x00	; 0
+ 15a:	e1 f7       	brne	.-8      	; 0x154 <get_button2+0x40>
+ 15c:	00 c0       	rjmp	.+0      	; 0x15e <get_button2+0x4a>
+ 15e:	00 00       	nop
+		 _delay_ms(30);
+		 return 1;             // 완전히 눌렀다 떼어진 상태로 인정
+ 160:	81 e0       	ldi	r24, 0x01	; 1
+ 162:	90 e0       	ldi	r25, 0x00	; 0
+ 164:	08 95       	ret
+	 }
+	 return 0;   // 아직 완전히 S/W를 눌렀다 뗴지 않은 상태
+ 166:	80 e0       	ldi	r24, 0x00	; 0
+ 168:	90 e0       	ldi	r25, 0x00	; 0
+ 16a:	08 95       	ret
+ 16c:	80 e0       	ldi	r24, 0x00	; 0
+ 16e:	90 e0       	ldi	r25, 0x00	; 0
+ }
+ 170:	08 95       	ret
+
+00000172 <get_button3>:
+  int get_button3()    // port4 (button1)에 연결된 것을 읽어들이는 함수
+  {
+	  static uint8_t prev_state=0;   // 버튼의 상태 0: off, 1: on
+	  uint8_t current_state;    // uint8_t : open source type -> unsigned char = uint8_t
+	  
+	  current_state = BUTTON_PIN & (1 << BUTTON3);      // button1 값을 읽는다  0x10
+ 172:	80 b3       	in	r24, 0x10	; 16
+ 174:	80 74       	andi	r24, 0x40	; 64
+	  if (prev_state == 0 && current_state !=0)         // 버튼이 처음 눌려진 상태
+ 176:	90 91 00 01 	lds	r25, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 17a:	91 11       	cpse	r25, r1
+ 17c:	11 c0       	rjmp	.+34     	; 0x1a0 <get_button3+0x2e>
+ 17e:	88 23       	and	r24, r24
+ 180:	79 f0       	breq	.+30     	; 0x1a0 <get_button3+0x2e>
+ 182:	2f ef       	ldi	r18, 0xFF	; 255
+ 184:	8d ee       	ldi	r24, 0xED	; 237
+ 186:	92 e0       	ldi	r25, 0x02	; 2
+ 188:	21 50       	subi	r18, 0x01	; 1
+ 18a:	80 40       	sbci	r24, 0x00	; 0
+ 18c:	90 40       	sbci	r25, 0x00	; 0
+ 18e:	e1 f7       	brne	.-8      	; 0x188 <get_button3+0x16>
+ 190:	00 c0       	rjmp	.+0      	; 0x192 <get_button3+0x20>
+ 192:	00 00       	nop
+	  {
+		  _delay_ms(60);          // Noise가 지나가기를 기다리는 시간
+		  prev_state=1;           // 처음 눌려진 상태가 아니다
+ 194:	81 e0       	ldi	r24, 0x01	; 1
+ 196:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+		  return 0;              // 진짜로 눌려진 상태가 아니다
+ 19a:	80 e0       	ldi	r24, 0x00	; 0
+ 19c:	90 e0       	ldi	r25, 0x00	; 0
+ 19e:	08 95       	ret
+	  }
+	  else if (prev_state == 1 && current_state ==0) // 버튼이 눌렸다가(prev==1) 떼어진 상태(current==0) -> high (5V)에서 low (0V)로 떨어지는 상태
+ 1a0:	91 30       	cpi	r25, 0x01	; 1
+ 1a2:	81 f4       	brne	.+32     	; 0x1c4 <get_button3+0x52>
+ 1a4:	81 11       	cpse	r24, r1
+ 1a6:	11 c0       	rjmp	.+34     	; 0x1ca <get_button3+0x58>
+	  {
+		  prev_state=0;
+ 1a8:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 1ac:	2f ef       	ldi	r18, 0xFF	; 255
+ 1ae:	86 e7       	ldi	r24, 0x76	; 118
+ 1b0:	91 e0       	ldi	r25, 0x01	; 1
+ 1b2:	21 50       	subi	r18, 0x01	; 1
+ 1b4:	80 40       	sbci	r24, 0x00	; 0
+ 1b6:	90 40       	sbci	r25, 0x00	; 0
+ 1b8:	e1 f7       	brne	.-8      	; 0x1b2 <get_button3+0x40>
+ 1ba:	00 c0       	rjmp	.+0      	; 0x1bc <get_button3+0x4a>
+ 1bc:	00 00       	nop
+		  _delay_ms(30);
+		  return 1;             // 완전히 눌렀다 떼어진 상태로 인정
+ 1be:	81 e0       	ldi	r24, 0x01	; 1
+ 1c0:	90 e0       	ldi	r25, 0x00	; 0
+ 1c2:	08 95       	ret
+	  }
+	  return 0;   // 아직 완전히 S/W를 눌렀다 뗴지 않은 상태
+ 1c4:	80 e0       	ldi	r24, 0x00	; 0
+ 1c6:	90 e0       	ldi	r25, 0x00	; 0
+ 1c8:	08 95       	ret
+ 1ca:	80 e0       	ldi	r24, 0x00	; 0
+ 1cc:	90 e0       	ldi	r25, 0x00	; 0
+  }
+ 1ce:	08 95       	ret
+
+000001d0 <shift_left_led_on>:
+void shift_flower_fallen_on(void);
+void shift_flower_blooming_on(void);
+
+void shift_left_led_on(void)
+{
+	for (int i = 0; i<8; i++)
+ 1d0:	80 e0       	ldi	r24, 0x00	; 0
+ 1d2:	90 e0       	ldi	r25, 0x00	; 0
+ 1d4:	13 c0       	rjmp	.+38     	; 0x1fc <shift_left_led_on+0x2c>
+	{
+		PORTA = 0x01 << i;
+ 1d6:	21 e0       	ldi	r18, 0x01	; 1
+ 1d8:	30 e0       	ldi	r19, 0x00	; 0
+ 1da:	08 2e       	mov	r0, r24
+ 1dc:	02 c0       	rjmp	.+4      	; 0x1e2 <shift_left_led_on+0x12>
+ 1de:	22 0f       	add	r18, r18
+ 1e0:	33 1f       	adc	r19, r19
+ 1e2:	0a 94       	dec	r0
+ 1e4:	e2 f7       	brpl	.-8      	; 0x1de <shift_left_led_on+0xe>
+ 1e6:	2b bb       	out	0x1b, r18	; 27
+ 1e8:	2f ef       	ldi	r18, 0xFF	; 255
+ 1ea:	35 ea       	ldi	r19, 0xA5	; 165
+ 1ec:	4e e0       	ldi	r20, 0x0E	; 14
+ 1ee:	21 50       	subi	r18, 0x01	; 1
+ 1f0:	30 40       	sbci	r19, 0x00	; 0
+ 1f2:	40 40       	sbci	r20, 0x00	; 0
+ 1f4:	e1 f7       	brne	.-8      	; 0x1ee <shift_left_led_on+0x1e>
+ 1f6:	00 c0       	rjmp	.+0      	; 0x1f8 <shift_left_led_on+0x28>
+ 1f8:	00 00       	nop
+void shift_flower_fallen_on(void);
+void shift_flower_blooming_on(void);
+
+void shift_left_led_on(void)
+{
+	for (int i = 0; i<8; i++)
+ 1fa:	01 96       	adiw	r24, 0x01	; 1
+ 1fc:	88 30       	cpi	r24, 0x08	; 8
+ 1fe:	91 05       	cpc	r25, r1
+ 200:	54 f3       	brlt	.-44     	; 0x1d6 <shift_left_led_on+0x6>
+	{
+		PORTA = 0x01 << i;
+		_delay_ms(300);
+	}
+}
+ 202:	08 95       	ret
+
+00000204 <shift_right_led_on>:
+
+void shift_right_led_on(void)
+{
+	for (int i = 0; i<8; i++)
+ 204:	80 e0       	ldi	r24, 0x00	; 0
+ 206:	90 e0       	ldi	r25, 0x00	; 0
+ 208:	13 c0       	rjmp	.+38     	; 0x230 <shift_right_led_on+0x2c>
+	{
+		PORTA = 0x80 >> i;
+ 20a:	20 e8       	ldi	r18, 0x80	; 128
+ 20c:	30 e0       	ldi	r19, 0x00	; 0
+ 20e:	08 2e       	mov	r0, r24
+ 210:	02 c0       	rjmp	.+4      	; 0x216 <shift_right_led_on+0x12>
+ 212:	35 95       	asr	r19
+ 214:	27 95       	ror	r18
+ 216:	0a 94       	dec	r0
+ 218:	e2 f7       	brpl	.-8      	; 0x212 <shift_right_led_on+0xe>
+ 21a:	2b bb       	out	0x1b, r18	; 27
+ 21c:	2f ef       	ldi	r18, 0xFF	; 255
+ 21e:	35 ea       	ldi	r19, 0xA5	; 165
+ 220:	4e e0       	ldi	r20, 0x0E	; 14
+ 222:	21 50       	subi	r18, 0x01	; 1
+ 224:	30 40       	sbci	r19, 0x00	; 0
+ 226:	40 40       	sbci	r20, 0x00	; 0
+ 228:	e1 f7       	brne	.-8      	; 0x222 <shift_right_led_on+0x1e>
+ 22a:	00 c0       	rjmp	.+0      	; 0x22c <shift_right_led_on+0x28>
+ 22c:	00 00       	nop
+	}
+}
+
+void shift_right_led_on(void)
+{
+	for (int i = 0; i<8; i++)
+ 22e:	01 96       	adiw	r24, 0x01	; 1
+ 230:	88 30       	cpi	r24, 0x08	; 8
+ 232:	91 05       	cpc	r25, r1
+ 234:	54 f3       	brlt	.-44     	; 0x20a <shift_right_led_on+0x6>
+	{
+		PORTA = 0x80 >> i;
+		_delay_ms(300);
+	}
+}
+ 236:	08 95       	ret
+
+00000238 <shift_stack_left_led_on>:
+
+void shift_stack_left_led_on(void)
+{
+	PORTA = 0x00;
+ 238:	1b ba       	out	0x1b, r1	; 27
+	for (int i = 0; i<8; i++)
+ 23a:	20 e0       	ldi	r18, 0x00	; 0
+ 23c:	30 e0       	ldi	r19, 0x00	; 0
+ 23e:	16 c0       	rjmp	.+44     	; 0x26c <shift_stack_left_led_on+0x34>
+	{
+		PORTA |= 0x01 << i;
+ 240:	4b b3       	in	r20, 0x1b	; 27
+ 242:	81 e0       	ldi	r24, 0x01	; 1
+ 244:	90 e0       	ldi	r25, 0x00	; 0
+ 246:	02 2e       	mov	r0, r18
+ 248:	02 c0       	rjmp	.+4      	; 0x24e <shift_stack_left_led_on+0x16>
+ 24a:	88 0f       	add	r24, r24
+ 24c:	99 1f       	adc	r25, r25
+ 24e:	0a 94       	dec	r0
+ 250:	e2 f7       	brpl	.-8      	; 0x24a <shift_stack_left_led_on+0x12>
+ 252:	84 2b       	or	r24, r20
+ 254:	8b bb       	out	0x1b, r24	; 27
+ 256:	4f ef       	ldi	r20, 0xFF	; 255
+ 258:	85 ea       	ldi	r24, 0xA5	; 165
+ 25a:	9e e0       	ldi	r25, 0x0E	; 14
+ 25c:	41 50       	subi	r20, 0x01	; 1
+ 25e:	80 40       	sbci	r24, 0x00	; 0
+ 260:	90 40       	sbci	r25, 0x00	; 0
+ 262:	e1 f7       	brne	.-8      	; 0x25c <shift_stack_left_led_on+0x24>
+ 264:	00 c0       	rjmp	.+0      	; 0x266 <shift_stack_left_led_on+0x2e>
+ 266:	00 00       	nop
+}
+
+void shift_stack_left_led_on(void)
+{
+	PORTA = 0x00;
+	for (int i = 0; i<8; i++)
+ 268:	2f 5f       	subi	r18, 0xFF	; 255
+ 26a:	3f 4f       	sbci	r19, 0xFF	; 255
+ 26c:	28 30       	cpi	r18, 0x08	; 8
+ 26e:	31 05       	cpc	r19, r1
+ 270:	3c f3       	brlt	.-50     	; 0x240 <shift_stack_left_led_on+0x8>
+	{
+		PORTA |= 0x01 << i;
+		_delay_ms(300);
+	}
+}
+ 272:	08 95       	ret
+
+00000274 <shift_stack_right_led_on>:
+
+void shift_stack_right_led_on(void)
+{
+	PORTA = 0x00;
+ 274:	1b ba       	out	0x1b, r1	; 27
+	for (int i = 0; i<8; i++)
+ 276:	20 e0       	ldi	r18, 0x00	; 0
+ 278:	30 e0       	ldi	r19, 0x00	; 0
+ 27a:	16 c0       	rjmp	.+44     	; 0x2a8 <shift_stack_right_led_on+0x34>
+	{
+		PORTA |= 0x80 >> i;
+ 27c:	4b b3       	in	r20, 0x1b	; 27
+ 27e:	80 e8       	ldi	r24, 0x80	; 128
+ 280:	90 e0       	ldi	r25, 0x00	; 0
+ 282:	02 2e       	mov	r0, r18
+ 284:	02 c0       	rjmp	.+4      	; 0x28a <shift_stack_right_led_on+0x16>
+ 286:	95 95       	asr	r25
+ 288:	87 95       	ror	r24
+ 28a:	0a 94       	dec	r0
+ 28c:	e2 f7       	brpl	.-8      	; 0x286 <shift_stack_right_led_on+0x12>
+ 28e:	84 2b       	or	r24, r20
+ 290:	8b bb       	out	0x1b, r24	; 27
+ 292:	4f ef       	ldi	r20, 0xFF	; 255
+ 294:	85 ea       	ldi	r24, 0xA5	; 165
+ 296:	9e e0       	ldi	r25, 0x0E	; 14
+ 298:	41 50       	subi	r20, 0x01	; 1
+ 29a:	80 40       	sbci	r24, 0x00	; 0
+ 29c:	90 40       	sbci	r25, 0x00	; 0
+ 29e:	e1 f7       	brne	.-8      	; 0x298 <shift_stack_right_led_on+0x24>
+ 2a0:	00 c0       	rjmp	.+0      	; 0x2a2 <shift_stack_right_led_on+0x2e>
+ 2a2:	00 00       	nop
+}
+
+void shift_stack_right_led_on(void)
+{
+	PORTA = 0x00;
+	for (int i = 0; i<8; i++)
+ 2a4:	2f 5f       	subi	r18, 0xFF	; 255
+ 2a6:	3f 4f       	sbci	r19, 0xFF	; 255
+ 2a8:	28 30       	cpi	r18, 0x08	; 8
+ 2aa:	31 05       	cpc	r19, r1
+ 2ac:	3c f3       	brlt	.-50     	; 0x27c <shift_stack_right_led_on+0x8>
+	{
+		PORTA |= 0x80 >> i;
+		_delay_ms(300);
+	}
+}
+ 2ae:	08 95       	ret
+
+000002b0 <shift_flower_fallen_on>:
+
+void shift_flower_fallen_on(void)
+{
+	for (int i = 0; i<4; i++)
+ 2b0:	20 e0       	ldi	r18, 0x00	; 0
+ 2b2:	30 e0       	ldi	r19, 0x00	; 0
+ 2b4:	1e c0       	rjmp	.+60     	; 0x2f2 <shift_flower_fallen_on+0x42>
+	{
+		PORTA = (0x80 >> i) | (0x01 << i);
+ 2b6:	80 e8       	ldi	r24, 0x80	; 128
+ 2b8:	90 e0       	ldi	r25, 0x00	; 0
+ 2ba:	ac 01       	movw	r20, r24
+ 2bc:	02 2e       	mov	r0, r18
+ 2be:	02 c0       	rjmp	.+4      	; 0x2c4 <shift_flower_fallen_on+0x14>
+ 2c0:	55 95       	asr	r21
+ 2c2:	47 95       	ror	r20
+ 2c4:	0a 94       	dec	r0
+ 2c6:	e2 f7       	brpl	.-8      	; 0x2c0 <shift_flower_fallen_on+0x10>
+ 2c8:	81 e0       	ldi	r24, 0x01	; 1
+ 2ca:	90 e0       	ldi	r25, 0x00	; 0
+ 2cc:	02 2e       	mov	r0, r18
+ 2ce:	02 c0       	rjmp	.+4      	; 0x2d4 <shift_flower_fallen_on+0x24>
+ 2d0:	88 0f       	add	r24, r24
+ 2d2:	99 1f       	adc	r25, r25
+ 2d4:	0a 94       	dec	r0
+ 2d6:	e2 f7       	brpl	.-8      	; 0x2d0 <shift_flower_fallen_on+0x20>
+ 2d8:	84 2b       	or	r24, r20
+ 2da:	8b bb       	out	0x1b, r24	; 27
+ 2dc:	4f ef       	ldi	r20, 0xFF	; 255
+ 2de:	85 ea       	ldi	r24, 0xA5	; 165
+ 2e0:	9e e0       	ldi	r25, 0x0E	; 14
+ 2e2:	41 50       	subi	r20, 0x01	; 1
+ 2e4:	80 40       	sbci	r24, 0x00	; 0
+ 2e6:	90 40       	sbci	r25, 0x00	; 0
+ 2e8:	e1 f7       	brne	.-8      	; 0x2e2 <shift_flower_fallen_on+0x32>
+ 2ea:	00 c0       	rjmp	.+0      	; 0x2ec <shift_flower_fallen_on+0x3c>
+ 2ec:	00 00       	nop
+	}
+}
+
+void shift_flower_fallen_on(void)
+{
+	for (int i = 0; i<4; i++)
+ 2ee:	2f 5f       	subi	r18, 0xFF	; 255
+ 2f0:	3f 4f       	sbci	r19, 0xFF	; 255
+ 2f2:	24 30       	cpi	r18, 0x04	; 4
+ 2f4:	31 05       	cpc	r19, r1
+ 2f6:	fc f2       	brlt	.-66     	; 0x2b6 <shift_flower_fallen_on+0x6>
+	{
+		PORTA = (0x80 >> i) | (0x01 << i);
+		_delay_ms(300);
+	}
+}
+ 2f8:	08 95       	ret
+
+000002fa <shift_flower_blooming_on>:
+
+void shift_flower_blooming_on(void)
+{
+	for (int i = 0; i<4; i++)
+ 2fa:	20 e0       	ldi	r18, 0x00	; 0
+ 2fc:	30 e0       	ldi	r19, 0x00	; 0
+ 2fe:	1e c0       	rjmp	.+60     	; 0x33c <shift_flower_blooming_on+0x42>
+	{
+		PORTA = (0x10 << i) | (0x08 >> i);
+ 300:	80 e1       	ldi	r24, 0x10	; 16
+ 302:	90 e0       	ldi	r25, 0x00	; 0
+ 304:	ac 01       	movw	r20, r24
+ 306:	02 2e       	mov	r0, r18
+ 308:	02 c0       	rjmp	.+4      	; 0x30e <shift_flower_blooming_on+0x14>
+ 30a:	44 0f       	add	r20, r20
+ 30c:	55 1f       	adc	r21, r21
+ 30e:	0a 94       	dec	r0
+ 310:	e2 f7       	brpl	.-8      	; 0x30a <shift_flower_blooming_on+0x10>
+ 312:	88 e0       	ldi	r24, 0x08	; 8
+ 314:	90 e0       	ldi	r25, 0x00	; 0
+ 316:	02 2e       	mov	r0, r18
+ 318:	02 c0       	rjmp	.+4      	; 0x31e <shift_flower_blooming_on+0x24>
+ 31a:	95 95       	asr	r25
+ 31c:	87 95       	ror	r24
+ 31e:	0a 94       	dec	r0
+ 320:	e2 f7       	brpl	.-8      	; 0x31a <shift_flower_blooming_on+0x20>
+ 322:	84 2b       	or	r24, r20
+ 324:	8b bb       	out	0x1b, r24	; 27
+ 326:	4f ef       	ldi	r20, 0xFF	; 255
+ 328:	85 ea       	ldi	r24, 0xA5	; 165
+ 32a:	9e e0       	ldi	r25, 0x0E	; 14
+ 32c:	41 50       	subi	r20, 0x01	; 1
+ 32e:	80 40       	sbci	r24, 0x00	; 0
+ 330:	90 40       	sbci	r25, 0x00	; 0
+ 332:	e1 f7       	brne	.-8      	; 0x32c <shift_flower_blooming_on+0x32>
+ 334:	00 c0       	rjmp	.+0      	; 0x336 <shift_flower_blooming_on+0x3c>
+ 336:	00 00       	nop
+	}
+}
+
+void shift_flower_blooming_on(void)
+{
+	for (int i = 0; i<4; i++)
+ 338:	2f 5f       	subi	r18, 0xFF	; 255
+ 33a:	3f 4f       	sbci	r19, 0xFF	; 255
+ 33c:	24 30       	cpi	r18, 0x04	; 4
+ 33e:	31 05       	cpc	r19, r1
+ 340:	fc f2       	brlt	.-66     	; 0x300 <shift_flower_blooming_on+0x6>
+	{
+		PORTA = (0x10 << i) | (0x08 >> i);
+		_delay_ms(300);
+	}
+}
+ 342:	08 95       	ret
+
+00000344 <main>:
+
+int main(void)
+{
+    LED_DDR = 0xff;  //  DDRA = 0xff; LED출력 모드이기때문에 1로
+ 344:	8f ef       	ldi	r24, 0xFF	; 255
+ 346:	8a bb       	out	0x1a, r24	; 26
+	LED_PORT = 0x00;  // led all off
+ 348:	1b ba       	out	0x1b, r1	; 27
+	init_button();
+ 34a:	b1 de       	rcall	.-670    	; 0xae <init_button>
+    
+	while (1) 
+    { 
+
+		if (get_button1())
+ 34c:	b4 de       	rcall	.-664    	; 0xb6 <get_button1>
+ 34e:	89 2b       	or	r24, r25
+ 350:	99 f0       	breq	.+38     	; 0x378 <main+0x34>
+ 352:	81 e0       	ldi	r24, 0x01	; 1
+		{
+			button1_state = !button1_state;
+ 354:	90 e0       	ldi	r25, 0x00	; 0
+ 356:	20 91 07 01 	lds	r18, 0x0107	; 0x800107 <button1_state>
+ 35a:	30 91 08 01 	lds	r19, 0x0108	; 0x800108 <button1_state+0x1>
+ 35e:	23 2b       	or	r18, r19
+ 360:	11 f0       	breq	.+4      	; 0x366 <main+0x22>
+ 362:	80 e0       	ldi	r24, 0x00	; 0
+ 364:	90 e0       	ldi	r25, 0x00	; 0
+ 366:	90 93 08 01 	sts	0x0108, r25	; 0x800108 <button1_state+0x1>
+ 36a:	80 93 07 01 	sts	0x0107, r24	; 0x800107 <button1_state>
+ 36e:	89 2b       	or	r24, r25
+			{
+				if(button1_state)
+ 370:	11 f0       	breq	.+4      	; 0x376 <main+0x32>
+				{
+					shift_left_led_on();
+ 372:	2e df       	rcall	.-420    	; 0x1d0 <shift_left_led_on>
+				}
+				else
+				{
+			        shift_right_led_on();
+ 374:	01 c0       	rjmp	.+2      	; 0x378 <main+0x34>
+ 376:	46 df       	rcall	.-372    	; 0x204 <shift_right_led_on>
+				}			
+			}
+		}
+		if (get_button2())
+ 378:	cd de       	rcall	.-614    	; 0x114 <get_button2>
+ 37a:	89 2b       	or	r24, r25
+ 37c:	99 f0       	breq	.+38     	; 0x3a4 <main+0x60>
+ 37e:	81 e0       	ldi	r24, 0x01	; 1
+		{
+			button2_state = !button2_state;
+ 380:	90 e0       	ldi	r25, 0x00	; 0
+ 382:	20 91 05 01 	lds	r18, 0x0105	; 0x800105 <button2_state>
+ 386:	30 91 06 01 	lds	r19, 0x0106	; 0x800106 <button2_state+0x1>
+ 38a:	23 2b       	or	r18, r19
+ 38c:	11 f0       	breq	.+4      	; 0x392 <main+0x4e>
+ 38e:	80 e0       	ldi	r24, 0x00	; 0
+ 390:	90 e0       	ldi	r25, 0x00	; 0
+ 392:	90 93 06 01 	sts	0x0106, r25	; 0x800106 <button2_state+0x1>
+ 396:	80 93 05 01 	sts	0x0105, r24	; 0x800105 <button2_state>
+				if(button2_state)
+ 39a:	89 2b       	or	r24, r25
+				{
+					shift_stack_left_led_on();
+ 39c:	11 f0       	breq	.+4      	; 0x3a2 <main+0x5e>
+ 39e:	4c df       	rcall	.-360    	; 0x238 <shift_stack_left_led_on>
+ 3a0:	01 c0       	rjmp	.+2      	; 0x3a4 <main+0x60>
+				}
+				else
+				{
+					shift_stack_right_led_on();
+ 3a2:	68 df       	rcall	.-304    	; 0x274 <shift_stack_right_led_on>
+ 3a4:	e6 de       	rcall	.-564    	; 0x172 <get_button3>
+				}
+		}
+		if (get_button3())
+ 3a6:	89 2b       	or	r24, r25
+ 3a8:	89 f2       	breq	.-94     	; 0x34c <main+0x8>
+ 3aa:	81 e0       	ldi	r24, 0x01	; 1
+ 3ac:	90 e0       	ldi	r25, 0x00	; 0
+		{
+			button3_state = !button3_state;
+ 3ae:	20 91 03 01 	lds	r18, 0x0103	; 0x800103 <button3_state>
+ 3b2:	30 91 04 01 	lds	r19, 0x0104	; 0x800104 <button3_state+0x1>
+ 3b6:	23 2b       	or	r18, r19
+ 3b8:	11 f0       	breq	.+4      	; 0x3be <main+0x7a>
+ 3ba:	80 e0       	ldi	r24, 0x00	; 0
+ 3bc:	90 e0       	ldi	r25, 0x00	; 0
+ 3be:	90 93 04 01 	sts	0x0104, r25	; 0x800104 <button3_state+0x1>
+ 3c2:	80 93 03 01 	sts	0x0103, r24	; 0x800103 <button3_state>
+				if(button3_state)
+ 3c6:	89 2b       	or	r24, r25
+ 3c8:	11 f0       	breq	.+4      	; 0x3ce <main+0x8a>
+				{
+					shift_flower_fallen_on();
+ 3ca:	72 df       	rcall	.-284    	; 0x2b0 <shift_flower_fallen_on>
+ 3cc:	bf cf       	rjmp	.-130    	; 0x34c <main+0x8>
+ 3ce:	95 df       	rcall	.-214    	; 0x2fa <shift_flower_blooming_on>
+				}
+				else
+				{
+					shift_flower_blooming_on();
+ 3d0:	bd cf       	rjmp	.-134    	; 0x34c <main+0x8>
+
+000003d2 <_exit>:
+ 3d2:	f8 94       	cli
+
+000003d4 <__stop_program>:
+ 3d4:	ff cf       	rjmp	.-2      	; 0x3d4 <__stop_program>
